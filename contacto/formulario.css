@@ -1,0 +1,332 @@
+/*-------------APLICADO A TODO-------------*/
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    background-color: rgb(146, 142, 137);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    padding: 0 20px 0 20px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+footer{
+    background-color: rgb(146, 142, 137);
+    padding: 10px;
+}
+
+ol, ul {
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    display: flex;
+    float: left;
+    align-items: end;
+}
+
+/*-------------LOGOS-------------*/
+
+header a i {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 30px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/*-------------HEADER------------*/
+
+header nav ul {
+    display: flex;
+    gap: 20px; /*--espacio entre los items li--*/
+    flex-wrap: wrap;
+}
+
+/*-------------SECCIONES-------------*/
+
+nav {
+    display: flex;
+    align-items:center; 
+    flex-direction: row-reverse;
+}
+
+.seccion-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    
+}
+
+.acerca-de {
+    width: 400px;
+    padding: 10px;
+    text-align: right;
+}
+
+.acerca-imagen img {
+    width: 250px;
+    border: solid black 1px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.seccion-2 img {
+    width: 100%;
+}
+
+.seccion-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+
+
+/*-------------APARTADOS-------------*/
+
+.apartado {
+    width: 400px;
+    border: 2px inset;
+    padding: 5px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apartado p {
+    width: 330px;
+    text-align: justify;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+    align-self: flex-start;
+    padding: 0 0 0 25px;
+}
+
+.apartado img {
+    width: 350px;
+}
+
+/*-------------FOOTER-------------*/
+
+body footer i {
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(42, 221, 48);
+}
+
+/*-------------ESTILOS PARA PANTALLAS-------------*/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    pequeñas */
+    body {
+    font-size: 16px;
+    margin: 0;
+    }
+    .container {
+    width: 100%;
+    margin: 0;
+    }
+    header {
+        background-color: brown;
+        width: 100%;
+        align-items: center;
+        margin: 0; 
+        border-radius: 0;   
+    }
+    header a i {
+        color: rgb(219, 197, 57);
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .acerca-de {
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .acerca-imagen img {
+        display: flex;
+        position: relative;
+        border: none;
+    }
+    .seccion-1 {
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        text-align: center;
+
+        top: 65px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    grandes */
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .checkbtn {
+        display: none;
+    }
+}
+
+/*----------FORMULARIO----------*/
+
+/*---cada item del formulario---*/
+.form-group {
+    margin-bottom: 10px; /* Espacio entre cada input */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+/*---botón---*/
+button {
+    /* Coloca estilos a tu botón */
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: inset;
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgb(183, 183, 173); /* color de fondo */
+    color: #fff; /* color del texto */
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+}
+
+button:hover {
+    background-color: #4a5969;
+}
+
+/*---imágen---*/
+.container-2 img {
+    width: 100%;
+    opacity: 50%;
+    margin: 0 auto;
+}
+
+/*---cuadro de formulario---*/
+.container-2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.formulario {
+    width: 50%;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(255,255,255,0.8);
+    border-radius: 10px;
+}
+
+/*---título---*/
+main h2 {
+    position: absolute;
+    font-size: 30px;
+    color: #003750;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+}
