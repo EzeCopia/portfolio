@@ -1,0 +1,420 @@
+/*-------------APLICADO A TODO-------------*/
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #000000, #777777)
+}
+
+header {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    padding: 10px;
+    background-color: #000000;
+    margin: 5px;
+    border-radius: 10px;
+    color: white
+}
+
+ol, ul {
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    display: flex;
+    float: left;
+    align-items: end;
+}
+
+
+/*-------------HEADER------------*/
+
+header nav ul {
+    display: flex;
+    gap: 20px; /*--espacio entre los items li--*/
+    flex-wrap: wrap;
+}
+
+
+/*-------------SECCIONES-------------*/
+#seccion-principal {
+    background: linear-gradient( black, rgb(123, 123, 123));
+}
+
+nav {
+    display: flex;
+    align-items:center; 
+    flex-direction: row-reverse;
+}
+
+.seccion-1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.acerca-de {
+    width: 400px;
+    padding: 10px;
+    text-align: right;
+}
+
+.acerca-imagen img {
+    width: 250px;
+    margin: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2) ;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.8); /* Desplazamiento X, desplazamiento Y, difuminado, color de sombra */
+    transition: transform 0.5s ease, filter 0.2s ease;
+}
+
+.acerca-imagen img:hover {
+    transform: scale(1.2); /* Zoom */
+    filter: grayscale(0%); /* Cambia de escala de grises a color */
+    background-color: white;
+}
+
+.seccion-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: column;
+}
+
+
+
+/*-------------APARTADOS-------------*/
+
+.apartado {
+    width: 400px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.apartado p {
+    width: 330px;
+    text-align:start;
+}
+
+h2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+    
+    width: 80%;
+    padding: 2px;
+    padding-left: 15px;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.apartado img {
+    width: 200px;
+}
+
+/*-------------LOGOS-------------*/
+
+header img {
+    width: 100px;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 30px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.logotipo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.logotipo-container img {
+    width: 50px;
+    margin: 10px;
+    filter: grayscale(70%);
+    transition: transform 0.5s ease, filter 0.2s ease;
+}
+
+.logotipo:hover {
+    transform: scale(1.4); /* Zoom */
+    filter: grayscale(0%); /* Cambia de escala de grises a color */
+}
+
+
+/*-------------FOOTER-------------*/
+
+body footer i {
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(42, 221, 48);
+}
+
+#footer {
+    background-color: rgb(91, 83, 67);
+    color: azure;
+    text-align: center;
+}
+
+/*-------------PALETA DE COLORES-------------*/
+#paleta {
+    position: fixed;
+    bottom: 10px; /* Ajusta la posición según tu diseño */
+    left: 10px; /* Ajusta la posición según tu diseño */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.color {
+    width: 10px;
+    height: 10px;
+}
+
+/*-------------BOTONES-------------*/
+
+.button {
+    /* Coloca estilos a tu botón */
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 0px;
+
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+    background-color: rgb(123, 17, 48);
+    color: white;
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button a{
+    color: white;
+}
+
+button:hover {
+    background-color:rgb(207, 181, 59);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/*-------------ESTILOS PARA PANTALLAS-------------*/
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    pequeñas */
+    body {
+    font-size: 16px;
+    margin: 0 auto;
+    }
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    }
+    header a i {
+        color: rgb(219, 197, 57);
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .acerca-de {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .acerca-imagen img {
+        display: flex;
+        position: relative;
+        border: none;
+        margin: 0 auto;
+    }
+    .seccion-1 {
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    main {
+        margin: 0 ;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+    .seccion-3 {
+        display: block;
+    }
+    .apartado {
+        width: 80%;
+        align-items: center ;
+        transform: translate(5px);
+    }
+    .apartado p {
+        width: 80%;
+    }
+
+
+    /* BOTON */
+    .checkbtn {
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        text-align: center;
+
+        top: 65px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    
+
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+    grandes */
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .checkbtn {
+        display: none;
+    }
+}
+}
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fade-in-element.fade-in {
+    opacity: 1;
+}
+
+/*-------------CARRUSEL-------------*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: opacity 1s ease; /* Transición de opacidad */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease; /* Transición de opacidad */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 100%;
+
+    font-size: 20px; /* Tamaño del icono */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%); /* Degradado */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Asegura que esté sobre las imágenes */
+    transition: opacity 1s ease; /* Transición de opacidad */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*-------------IMAGEN INICIAL-------------*/
+.imagen-con-viñeta {
+    position: relative; /* Para que el pseudo-elemento se posicione con respecto a este elemento */
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+}
+
+.imagen-con-viñeta::before {
+    content: '';
+    position: absolute; /* Posicionamos el pseudo-elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7)) ;
+    z-index: 2;
+}
+
+/* Ajusta el tamaño de la imagen si es necesario */
+.imagen-con-viñeta img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

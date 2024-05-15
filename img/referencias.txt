@@ -1,0 +1,11 @@
+01 = renders portfolio
+02 = renders facultad ARQUITECTURA
+03 = renders facultad DUS
+
+Negro: RGB(0, 0, 0)
+Blanco: RGB(255, 255, 255)
+Gris oscuro: RGB(85, 85, 85)
+Gris claro: RGB(170, 170, 170)
+Oro viejo: RGB(207, 181, 59)
+Marrón oscuro: RGB(101, 67, 33)
+Borgoña: RGB(123, 17, 48)
